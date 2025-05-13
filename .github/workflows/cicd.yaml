@@ -29,3 +29,8 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
+
+      - name: Info
+        uses: ./.github/actions/info
+        with:
+          fields: "ref,pusher"
